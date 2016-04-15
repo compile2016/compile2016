@@ -4,7 +4,7 @@ grammar PropertyFile;
     void startFile() { }
     void finishFile() { }
     void defineProperty(Token name, Token value) {
-        System.out.println(name.getText() + "=" + value.getText());
+        //System.out.println(name.getText() + "=" + value.getText());
     }
 }
 

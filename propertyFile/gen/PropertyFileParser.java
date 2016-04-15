@@ -78,7 +78,7 @@ public class PropertyFileParser extends Parser {
 	    void startFile() { }
 	    void finishFile() { }
 	    void defineProperty(Token name, Token value) {
-	        System.out.println(name.getText() + "=" + value.getText());
+	        //System.out.println(name.getText() + "=" + value.getText());
 	    }
 
 	public PropertyFileParser(TokenStream input) {
