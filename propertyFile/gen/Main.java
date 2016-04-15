@@ -1,12 +1,14 @@
 import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.tree.*;
 import java.io.*;
+import java.io.BufferedInputStream;
 
 public class Main {
     public static void main(String args[]) throws Exception {
         ANTLRInputStream cin = new ANTLRInputStream(
             new BufferedInputStream(
-                new FileInputStream("expression.txt")
+                new FileInputStream("../expression.txt")
             )
         );
 
@@ -18,9 +20,9 @@ public class Main {
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
 
-        PropertyFilePrinter printer = new PropertyFilePrinter(tokens);
+        PropertyFileParser parser = new PropertyFileParser(tokens);
 
-        printer.file();
+        parser.file();
     }
 }
 /*
