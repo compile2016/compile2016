@@ -97,12 +97,9 @@ public class PropertyFileParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_file; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PropertyFileListener ) ((PropertyFileListener)listener).enterFile(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PropertyFileListener ) ((PropertyFileListener)listener).exitFile(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof PropertyFileVisitor ) return ((PropertyFileVisitor<? extends T>)visitor).visitFile(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -152,12 +149,9 @@ public class PropertyFileParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_prop; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PropertyFileListener ) ((PropertyFileListener)listener).enterProp(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PropertyFileListener ) ((PropertyFileListener)listener).exitProp(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof PropertyFileVisitor ) return ((PropertyFileVisitor<? extends T>)visitor).visitProp(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
