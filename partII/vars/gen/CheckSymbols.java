@@ -28,11 +28,14 @@ public class CheckSymbols {
         Scope currentScope;
 
         /**
-         * rule that influence scopes:
+         * rule that influence scopes or symbols:
          * file
          * functionDecl
          * formalParameter
          * varDecl
+         * varDecl
+         * block
+         * formalParameter
          */
 
         void saveScope(ParserRuleContext ctx, Scope s) {
