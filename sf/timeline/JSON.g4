@@ -1,4 +1,4 @@
-grammar json;
+grammar JSON;
 
 json:   object
     |   array
