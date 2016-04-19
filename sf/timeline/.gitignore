@@ -1,0 +1,2 @@
+# ignore node modules, plz use `npm install` to install the dependencies:)
+node_modules/*
