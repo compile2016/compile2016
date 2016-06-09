@@ -1,63 +1,75 @@
-// Generated from C:/Users/Administrator/git/compile2016/evaluator\Expr.g4 by ANTLR 4.5.1
+// Generated from Simple.g4 by ANTLR 4.5.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link ExprListener},
+ * This class provides an empty implementation of {@link SimpleListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class ExprBaseListener implements ExprListener {
+public class SimpleBaseListener implements SimpleListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterS(ExprParser.SContext ctx) { }
+	@Override public void enterProg(SimpleParser.ProgContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitS(ExprParser.SContext ctx) { }
+	@Override public void exitProg(SimpleParser.ProgContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAdd(ExprParser.AddContext ctx) { }
+	@Override public void enterClassDef(SimpleParser.ClassDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAdd(ExprParser.AddContext ctx) { }
+	@Override public void exitClassDef(SimpleParser.ClassDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMult(ExprParser.MultContext ctx) { }
+	@Override public void enterMember(SimpleParser.MemberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMult(ExprParser.MultContext ctx) { }
+	@Override public void exitMember(SimpleParser.MemberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInt(ExprParser.IntContext ctx) { }
+	@Override public void enterStat(SimpleParser.StatContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInt(ExprParser.IntContext ctx) { }
+	@Override public void exitStat(SimpleParser.StatContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpr(SimpleParser.ExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpr(SimpleParser.ExprContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
