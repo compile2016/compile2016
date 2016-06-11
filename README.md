@@ -19,8 +19,8 @@ compile class -> 15162
 | 0 | antlr4环境搭建 | 2016-03-11 | finished |
 | 1 | partI | 2016-03-28 | finished |
 | 2 | partII | 2016-04-15 | finished |
-| 3 | partIII | 2016-06-10 | pending |
-| 4 | partIV | 2016-06-10 | pending |
+| 3 | partIII | 2016-06-10 | finished |
+| 4 | partIV | 2016-06-11 | finished |
 
 ## ~~Job Log~~**:deprecated:**
 
